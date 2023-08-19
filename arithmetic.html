@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 30px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .input-box {
+            width: 100px;
+            text-align: center;
+            margin-right: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arithmetic Operations</h1>
+    <div class="container">Enter num1:
+        <input type="text" class="input-box" id="num1" >
+        </div>
+        <div class="container">Enter num2:
+        <input type="text" class="input-box" id="num2" >
+    </div>
+    
+    <div class="container">
+        <button class="button" onclick="add()">Addition</button></div></br>
+        <button class="button" onclick="subtract()">Subtraction</button></br>
+        <button class="button" onclick="multiply()">Multiplication</button></br>
+        <button class="button" onclick="divide()">Division </button></br>
+    </div>
+    <div class="container">Result:
+    <input type="text" class="result" id="result" readonly>
+    </div>
+
+    <script>
+        function add() {
+            const num1 = Number(document.getElementById("num1").value);
+            const num2 = Number(document.getElementById("num2").value);
+            const result = num1 + num2;
+            document.getElementById("result").value = result;
+        }
+
+        function subtract() {
+            const num1 = Number(document.getElementById("num1").value);
+            const num2 = Number(document.getElementById("num2").value);
+            const result = num1 - num2;
+            document.getElementById("result").value = result;
+        }
+
+        function multiply() {
+            const num1 = Number(document.getElementById("num1").value);
+            const num2 = Number(document.getElementById("num2").value);
+            const result = num1 * num2;
+            document.getElementById("result").value = result;
+        }
+
+        function divide() {
+            const num1 = Number(document.getElementById("num1").value);
+            const num2 = Number(document.getElementById("num2").value);
+            if (num2 === 0) {
+                alert("The second number cannot be zero.");
+                return;
+            }
+            const result = num1 / num2;
+            document.getElementById("result").value = result;
+        }
+    </script>
+</body>
+</html>

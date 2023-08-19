@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enquiry Form</title>
+    <script>
+        function showAlert() {
+            alert("This is an alert message!");
+        }
+
+        function showPrompt() {
+            const userInput = prompt("Please enter your name:");
+            if (userInput) {
+                alert("Hello, " + userInput + "!");
+            } else {
+                alert("You didn't enter a name.");
+            }
+        }
+
+        function showConfirmation() {
+            const result = confirm("Are you sure you want to proceed?");
+            if (result) {
+                alert("You clicked OK!");
+            } else {
+                alert("You clicked Cancel!");
+            }
+        }
+
+        function performAddition() {
+            const num1 = parseFloat(prompt("Enter the first number:"));
+            const num2 = parseFloat(prompt("Enter the second number:"));
+
+            if (!isNaN(num1) && !isNaN(num2)) {
+                const sum = num1 + num2;
+                alert("The sum is: " + sum);
+            } else {
+                alert("Invalid input. Please enter valid numbers.");
+            }
+        }
+
+        function performSubtraction() {
+            const num1 = parseFloat(prompt("Enter the first number:"));
+            const num2 = parseFloat(prompt("Enter the second number:"));
+
+            if (!isNaN(num1) && !isNaN(num2)) {
+                const difference = num1 - num2;
+                alert("The difference is: " + difference);
+            } else {
+                alert("Invalid input. Please enter valid numbers.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Enquiry Form</h1>
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="showPrompt()">Show Prompt</button>
+    <button onclick="showConfirmation()">Show Confirmation</button>
+    <button onclick="performAddition()">Addition</button>
+    <button onclick="performSubtraction()">Subtraction</button>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+      h1{ color:rgb(156, 35, 53);
+       
+        font-size: 155%;
+    }
+    #f1{
+        color:red
+    }
+    .button {
+  background-color: #4CAF50;
+  width: 10%;
+    }
+    body{
+        
+        font-size: 140%;
+       background-color:antiquewhite
+
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <h1><b>COMPANY REGISTRATION FORM</b></h1>
+    <hr>
+    
+    <form action="/action.php">
+        <b><lable>Name:<lable id="f1">*</lable></lable></b>
+        <input type="text">
+         <br>
+         <br>
+
+       <b><lable>phone number:<lable id="f1">*</lable></lable></b> 
+        <input type="text">
+        <br>
+        <br>
+
+        <b><lable>email_id:<lable id="f1">*</lable></lable></b>
+        <input type="email" placeholder="ex:myname@example.com">
+        <br>
+        <br>
+        
+        <b><lable>Address:</lable></b>
+        <input type="text" placeholder="enter your address here">
+        <br>
+        <br>
+        <b><lable>City:</lable></b>
+        <input type="text" >
+        <br>
+        <br>
+        <b><lable>Pincode:</lable></b>
+        <input type="text" >
+        <br>
+        <br>
+        <label><b>Gender:</b><lable id="f1">*</lable></label>
+        <input type="radio" id="gender" name="gender" value="male">
+        <label for="gender">male</label>
+        <input type="radio" id="gender" name="gender" value="female">
+        <label for="gender">female</label><br>
+        <br>
+        <br>
+        <label><b>Type of Business:</b></label>
+        <br>
+        <input type="checkbox" id="internet" name="internet" value="Internet">
+        <label for="internet"> Internet</label><br>
+        <input type="checkbox" id="wholesale" name="wholesale" value="wholesale">
+        <label for="wholesale"> wholesale</label><br>
+        <input type="checkbox" id="Student" name="Student" value="Student">
+        <label for="student"> Student</label><br><br>
+       
+        <b><lable>About yourself:</lable></b>
+        <input type="text" placeholder="tell something about yourself">
+        <br>
+        <br>
+        <button class="button">Register</button>
+
+
+        
+
+
+
+    </form>
+</body>
+
+</html>

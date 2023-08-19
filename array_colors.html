@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Array Manipulation</title>
+</head>
+<body>
+    <script>
+        // Initial array of colors
+        const colors = ["Red", "Green", "Blue"];
+
+        // Function to display the current array
+        function displayColors() {
+            console.log(colors);
+        }
+
+        // Function to add a color to the array if not already present
+        function addColor() {
+            const userInput = prompt("Enter a color:");
+            if (userInput !== null && userInput !== "") {
+                const color = userInput.trim(); // Remove leading/trailing spaces
+                if (!colors.includes(color)) {
+                    colors.push(color);
+                    console.log(`Added "${color}" to the array.`);
+                } else {
+                    console.log(`"${color}" is already in the array.`);
+                }
+            }
+            displayColors(); // Display the updated array
+        }
+
+        // Call the initial display function
+        displayColors();
+        
+        // Call the addColor function when the page loads
+        addColor();
+    </script>
+</body>
+</html>
