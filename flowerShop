@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flower.css">
+    <style>
+    body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+     background-size: cover; 
+
+}
+H1{
+    font-style: italic;
+    color:aliceblue;
+    font-size: 600%;
+    text-align: center;
+    text-decoration: underline;
+}
+h2{
+    color:#E6E6FA;
+    font-size: 200%;
+     font-style: italic;
+}
+.f1{
+    height: 200px;
+    width: 200px;
+    color:aliceblue;
+    border: 2px solid #bfbea8;
+    display: inline-block;
+    margin:40px;
+    background-color: aliceblue;
+}
+.f2{
+    border: 6px solid #bfbea8;
+    display: inline-block;
+    margin:100px;
+    margin-top:2px;
+    background-color: aliceblue;
+}
+#E1{
+background-image: url("orchids.jpeg");
+}
+#E2{
+    background-image: url("rose.jpeg");
+}
+#E3{
+    background-image: url("tulip.jpeg");
+}
+#E4{
+    background-image: url("daisy.jpeg");
+}
+#E5{
+    background-image: url("lily.jpeg");
+}
+</style>
+</head>
+<body>
+   
+    <H1><b>FLORID</b> </H1>
+   <pre><h2>          fresh feelings for your love...</h2></pre> 
+    <div class="f1" id="E1">box1</div>
+    <div class="f1" id="E2">box2</div>
+    <div class="f1" id="E3">box3</div>
+    <div class="f1" id="E4">box4</div>
+    <div class="f1" id="E5">box5</div>
+    <div class="f2" id="E6">Orchids-/200</div>
+    <div class="f2" id="E7">Roses-/100</div>
+    <div class="f2" id="E8">Tulips-/250</div>
+    <div class="f2" id="E9">Daisy-/150</div>
+    <div class="f2" id="E10">Lily-/150</div>
+</body>
+</html>
